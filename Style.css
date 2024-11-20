@@ -1,0 +1,101 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--bg-gradient);
+  color: var(--text-color);
+  text-align: center;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+:root {
+  --bg-gradient: linear-gradient(135deg, #6a11cb, #2575fc);
+  --text-color: #fff;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --btn-bg: #ff4081;
+  --btn-hover-bg: #e03570;
+}
+
+[data-theme="dark"] {
+  --bg-gradient: linear-gradient(135deg, #000428, #004e92);
+  --text-color: #ddd;
+  --card-bg: rgba(0, 0, 0, 0.5);
+}
+
+
+header {
+  margin-bottom: 20px;
+}
+
+.theme-toggle {
+  margin: 10px 0;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+
+.controls {
+  margin: 20px 0;
+}
+
+.btn {
+  background: var(--btn-bg);
+  border: none;
+  color: #fff;
+  padding: 12px 20px;
+  margin: 10px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:disabled {
+  background: #888;
+  cursor: not-allowed;
+}
+
+.btn:hover:not(:disabled) {
+  background: var(--btn-hover-bg);
+}
+
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: var(--card-bg);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px);
+  min-width: 200px;
+  text-align: center;
+}
+
+.stat-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.stat-card p {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: var(--text-color);
+}
