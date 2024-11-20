@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataWaster v2.0</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>DataWaster v2.0</h1>
+      <p>The ultimate tool for controlled bandwidth chaos!</p>
+      <div class="theme-toggle">
+        <button id="toggle-theme">🌙 Dark Mode</button>
+      </div>
+    </header>
+
+    <div class="mode-selector">
+      <label for="mode">Choose Waste Mode:</label>
+      <select id="mode">
+        <option value="images">Image Mode</option>
+        <option value="api">API Mode</option>
+        <option value="custom">Custom URL</option>
+      </select>
+      <input id="custom-url" type="text" placeholder="Enter Custom URL" disabled />
+    </div>
+
+    <div class="controls">
+      <button id="start-btn" class="btn">Start</button>
+      <button id="pause-btn" class="btn" disabled>Pause</button>
+      <button id="stop-btn" class="btn" disabled>Stop</button>
+    </div>
+
+    <div class="stats">
+      <div class="stat-card">
+        <h2>Requests Made</h2>
+        <p id="requests">0</p>
+      </div>
+      <div class="stat-card">
+        <h2>Data Wasted</h2>
+        <p id="data">0 KB</p>
+      </div>
+      <div class="stat-card">
+        <h2>Network Speed</h2>
+        <p id="speed">0 KB/s</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 muhammed thajudheen | Created with ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
